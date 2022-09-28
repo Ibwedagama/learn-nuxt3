@@ -25,7 +25,7 @@ export default {
 
 <script setup lang="ts">
   interface Props {
-    type: string,
+    type?: string,
     variant?: string,
     fullWidth?: boolean,
     center?: boolean,
