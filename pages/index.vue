@@ -1,31 +1,19 @@
 <template>
   <BaseContainer>
-    <main class="w-full bg-gray-300 p-10">
+    <main class="w-full p-10">
       <h1 class="text-center">
         {{ title }}
       </h1>
       <br>
-      <section class="flex gap-5 justify-center">
+      <section class="flex gap-5">
         <BaseButton
           variant="primary"
           type="success"
+          :full-width="false"
+          :center="false"
           @click="changeTitle"
         >
-          <template #left-icon>
-            <span>👉</span>
-          </template>
           Change Title
-        </BaseButton>
-
-        <BaseButton
-          variant="secondary"
-          type="danger"
-          @click="resetTitle"
-        >
-          <template #left-icon>
-            <span>👉</span>
-          </template>
-          Reset Title
         </BaseButton>
       </section>
     </main>
